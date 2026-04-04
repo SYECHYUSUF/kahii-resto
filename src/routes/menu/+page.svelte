@@ -215,7 +215,7 @@
 	</nav>
 </header>
 
-<main class="pt-14 sm:pt-28 bg-[#f9f6f5] pb-24 sm:pb-4">
+<main class="pt-14 sm:pt-28 bg-[#f9f6f5] pb-24 sm:pb-4 mt-12">
 
 	<!-- ═══ HERO BANNER ══════════════════════════════ -->
 	<section class="relative px-3 sm:px-8 mb-12 sm:mb-24 overflow-hidden">
