@@ -36,21 +36,21 @@
 			name: 'Matcha Latte',
 			sub: 'Pure Kyoto Grade',
 			label: 'Ceremonial Bliss',
-			img: 'https://images.unsplash.com/photo-1515823662972-da6a2e4d3002?q=80&w=600&auto=format&fit=crop',
+			img: 'matcha.png',
 			offset: ''
 		},
 		{
-			name: 'Gula Aren',
+			name: 'Butterscotch Latte',
 			sub: 'Local Soul',
 			label: 'Sweet Heritage',
-			img: 'https://images.unsplash.com/photo-1499961093916-d2b60e7b3fb8?q=80&w=600&auto=format&fit=crop',
+			img: 'butterscotch.png',
 			offset: 'mt-16'
 		},
 		{
 			name: 'Nitro Brew',
 			sub: 'Velvet Texture',
 			label: 'Creamy Flow',
-			img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=600&auto=format&fit=crop',
+			img: 'nitro.png',
 			offset: ''
 		}
 	];
@@ -181,7 +181,7 @@
 		<span class="opacity-80">Jakarta · Surabaya · Makassar</span>
 		<span class="flex gap-4">
 			<a href="/menu" class="hover:text-[#ba0013] transition-colors">Order Now</a>
-			<a href="/#reservation" class="hover:text-[#ba0013] transition-colors">Join the Club</a>
+			<a href="/#reservation" class="hover:text-[#ba0013] transition-colors font-['Permanent_Marker']"> <span class="font-['Permanent_Marker']">Join the Club</span></a>
 		</span>
 	</div>
 	<!-- Main Nav -->
@@ -220,16 +220,16 @@
 			<div class="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
 				<span class="font-['Caveat'] text-[#ff766a] text-xl sm:text-3xl md:text-4xl mb-3 sm:mb-6 italic tracking-wide">Ramadhan Kareem &amp; Specials</span>
 				<h1 class="font-['Permanent_Marker'] text-white leading-none tracking-tight mb-4 sm:mb-8" style="font-size:clamp(2.5rem,8vw,7rem);text-shadow:0 10px 30px rgba(0,0,0,0.5)">
-					KAHII <span class="text-[#ff766a]">KREASI</span>
+					<span class="font-['Permanent_Marker']">KAHII</span> <span class="text-[#ff766a] font-['Permanent_Marker']">KREASI</span>
 				</h1>
 				<p class="font-['Epilogue'] text-sm sm:text-xl md:text-2xl text-white/90 max-w-xl font-light italic mb-6 sm:mb-14 leading-relaxed px-2">
 					A curated journey of heritage flavors and refined modern craft.
 				</p>
 				<div class="flex flex-col sm:flex-row gap-3 sm:gap-6 w-full max-w-sm sm:max-w-none sm:w-auto">
-					<a href="#editors-picks" class="bg-[#ba0013] text-white px-8 sm:px-14 py-3 sm:py-5 font-bold text-sm sm:text-lg uppercase tracking-widest hover:bg-[#a4000f] transition-all shadow-xl rounded-full hover:-translate-y-1 transform text-center">
+					<a href="#editors-picks" class="bg-[#ba0013] font-['Permanent_Marker'] text-white px-8 sm:px-14 py-3 sm:py-5 font-bold text-sm sm:text-lg uppercase tracking-widest hover:bg-[#a4000f] transition-all shadow-xl rounded-full hover:-translate-y-1 transform text-center">
 						Explore Menu
 					</a>
-					<a href="/#reservation" class="bg-white/10 backdrop-blur-xl border border-white/20 text-white px-8 sm:px-14 py-3 sm:py-5 font-bold text-sm sm:text-lg uppercase tracking-widest hover:bg-white/15 transition-all rounded-full text-center">
+					<a href="/#reservation" class="bg-white/10 font-['Permanent_Marker'] backdrop-blur-xl border border-white/20 text-white px-8 sm:px-14 py-3 sm:py-5 font-bold text-sm sm:text-lg uppercase tracking-widest hover:bg-white/15 transition-all rounded-full text-center">
 						Reserve Table
 					</a>
 				</div>
@@ -241,7 +241,7 @@
 	<section id="editors-picks" class="px-4 sm:px-8 mb-16 sm:mb-32 max-w-7xl mx-auto">
 		<div class="flex justify-between items-end mb-10 sm:mb-20 reveal">
 			<div class="relative">
-				<h2 class="font-['Permanent_Marker'] text-3xl sm:text-5xl md:text-6xl text-[#2f2f2e] mb-2">Editor's Picks</h2>
+				<h2 class="font-['Permanent_Marker'] text-3xl sm:text-5xl md:text-6xl text-[#2f2f2e] mb-2"> <span class="font-['Permanent_Marker']">Editor's Pics</span></h2>
 				<span class="font-['Caveat'] text-[#ba0013] text-xl sm:text-3xl absolute" style="bottom:-1.2rem;left:0.3rem;transform:rotate(-2deg)">The Signature Icons</span>
 			</div>
 			<div class="text-right hidden sm:block">
@@ -339,7 +339,7 @@
 	<!-- ═══ TOP 3 LIQUID ART ══════════════════════════ -->
 	<section class="px-4 sm:px-8 mb-16 sm:mb-40 max-w-7xl mx-auto">
 		<div class="flex flex-col items-center mb-10 sm:mb-24 reveal">
-			<h2 class="font-['Permanent_Marker'] text-4xl sm:text-6xl md:text-7xl text-[#2f2f2e] mb-3 text-center tracking-tight">Top 3 Liquid Art</h2>
+			<h2 class="font-['Permanent_Marker'] text-4xl sm:text-6xl md:text-7xl text-[#2f2f2e] mb-3 text-center tracking-tight"> <span class="font-['Permanent_Marker']">Top 3 Liquid Art</span></h2>
 			<span class="font-['Caveat'] text-[#ba0013] text-2xl sm:text-4xl italic">Our most ordered drafts</span>
 		</div>
 		<!-- Mobile: horizontal scroll -->
@@ -387,7 +387,7 @@
 	<!-- ═══ THE CANVAS SECTIONS (Full Menu Grid) ══════ -->
 	<section class="bg-[#2f2f2e] py-12 sm:py-32 px-4 sm:px-8 relative overflow-hidden">
 		<div class="max-w-7xl mx-auto relative z-10">
-			<h2 class="font-['Permanent_Marker'] text-3xl sm:text-5xl md:text-7xl text-center mb-8 sm:mb-28 text-[#f9f6f5] tracking-tighter reveal">The Canvas Sections</h2>
+			<h2 class="font-['Permanent_Marker'] text-3xl sm:text-5xl md:text-7xl text-center mb-8 sm:mb-28 text-[#f9f6f5] tracking-tighter reveal"> <span class="font-['Permanent_Marker'] text-[#ba0013]">The Canvas Sections</span></h2>
 			<div class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-12">
 
 				<!-- SIPS -->
@@ -490,7 +490,7 @@
 
 	<!-- ═══ FESTIVE HAPPENINGS ════════════════════════ -->
 	<section id="happenings" class="py-12 sm:py-40 px-4 sm:px-8 max-w-7xl mx-auto">
-		<h2 class="font-['Permanent_Marker'] text-3xl sm:text-5xl md:text-7xl mb-10 sm:mb-24 text-[#2f2f2e] text-center tracking-tight reveal">Festive Happenings</h2>
+		<h2 class="font-['Permanent_Marker'] text-3xl sm:text-5xl md:text-7xl mb-10 sm:mb-24 text-[#2f2f2e] text-center tracking-tight reveal"> <span class="font-['Permanent_Marker'] text-[#ba0013]">Festive Happenings</span></h2>
 		<!-- Mobile: horizontal scroll cards -->
 		<div class="sm:hidden flex gap-4 overflow-x-auto pb-4 -mx-4 px-4 snap-x snap-mandatory">
 			{#each happenings as h, i}
