@@ -229,21 +229,21 @@
 		{/if}
 	{:else}
 		<!-- ── State: SCROLLED (mobile + desktop) ── -->
-		<nav class="flex flex-row w-full px-4 sm:px-8 md:px-12 py-0 justify-between items-center h-16 sm:h-20 border-b border-black/5" style="background:rgba(249,246,245,0.95);backdrop-filter:blur(24px) saturate(200%);-webkit-backdrop-filter:blur(24px) saturate(200%);">
+		<nav class="flex flex-row w-full px-4 sm:px-8 md:px-12 py-0 justify-between items-center h-16 sm:h-20 shadow-md" style="background:#ba0013;backdrop-filter:blur(24px) saturate(200%);-webkit-backdrop-filter:blur(24px) saturate(200%);">
 			<!-- Left Nav (desktop only) -->
 			<div class="hidden md:flex items-center space-x-8 font-['Epilogue'] tracking-tight text-sm uppercase font-bold">
-				<a href="#menu" class="text-[#ba0013] border-b-2 border-[#ba0013] pb-1">Menu</a>
-				<a href="#reservation" class="text-[#2f2f2e] hover:text-[#ba0013] transition-colors">Reservations</a>
-				<a href="#about" class="text-[#2f2f2e] hover:text-[#ba0013] transition-colors">Our Story</a>
+				<a href="#menu" class="bg-white text-[#ba0013] px-3 py-1 rounded-full shadow-sm">Menu</a>
+				<a href="#reservation" class="text-white hover:text-white/80 transition-colors">Reservations</a>
+				<a href="#about" class="text-white hover:text-white/80 transition-colors">Our Story</a>
 			</div>
 			<!-- Mobile: Kahii logo kiri -->
 			<div class="flex md:hidden items-center gap-2">
-				<img src="/kahi-logo.png" alt="Kahii" class="h-7 w-auto" />
-				<img src="/kahi-logo-2.png" alt="Kahii" class="h-5 w-auto" />
+				<img src="/kahi-logo.png" alt="Kahii" class="h-7 w-auto" style="filter:brightness(0) invert(1)" />
+				<img src="/kahi-logo-2.png" alt="Kahii" class="h-5 w-auto" style="filter:brightness(0) invert(1)" />
 			</div>
 			<!-- Central Logo (desktop) -->
 			<div class="hidden md:flex absolute left-1/2 -translate-x-1/2 top-0 flex-col items-center">
-				<div class="flex items-center gap-2 bg-[#f9f6f5] px-6 py-3 bemet-logo-shape shadow-sm border-x border-b border-black/5">
+				<div class="flex items-center gap-2 bg-white px-6 pt-3 pb-10 bemet-logo-shape shadow-[0_15px_30px_rgba(0,0,0,0.15)] border-x border-b border-black/5" style="filter: drop-shadow(0 4px 6px rgba(0,0,0,0.2));">
 					<img src="/kahi-logo.png" alt="Kahii icon" class="h-10 w-auto" />
 					<img src="/kahi-logo-2.png" alt="Kahii" class="h-8 w-auto" />
 				</div>
@@ -251,20 +251,20 @@
 			<!-- Right Nav & Actions -->
 			<div class="flex items-center space-x-3 sm:space-x-4">
 				<div class="hidden lg:flex items-center space-x-8 font-['Epilogue'] tracking-tight text-sm uppercase font-bold">
-					<a href="#gallery" class="text-[#2f2f2e] hover:text-[#ba0013] transition-colors">Journal</a>
-					<a href="#top3" class="text-[#2f2f2e] hover:text-[#ba0013] transition-colors">Shop</a>
+					<a href="#gallery" class="text-white hover:text-white/80 transition-colors">Journal</a>
+					<a href="#top3" class="text-white hover:text-white/80 transition-colors">Shop</a>
 				</div>
 				<div class="flex items-center space-x-3">
-					<a href="https://www.instagram.com/your.kahii?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="text-[#2f2f2e] hover:text-[#ba0013] transition-colors hidden sm:flex">
+					<a href="https://www.instagram.com/your.kahii?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="text-white hover:text-white/80 transition-colors hidden sm:flex">
 						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
 					</a>
-					<span class="material-symbols-outlined text-[#2f2f2e] hover:text-[#ba0013] transition-colors cursor-pointer select-none hidden sm:block">shopping_bag</span>
-					<a href="#reservation" class="bg-[#ba0013] text-white px-3 sm:px-4 py-2 font-['Permanent_Marker'] uppercase tracking-wider text-xs sm:text-xs hover:opacity-90 transition-all active:scale-95">Book</a>
+					<span class="material-symbols-outlined text-white hover:text-white/80 transition-colors cursor-pointer select-none hidden sm:block">shopping_bag</span>
+					<a href="#reservation" class="bg-white text-[#ba0013] px-3 sm:px-4 py-2 font-['Permanent_Marker'] uppercase tracking-wider text-xs sm:text-xs hover:opacity-90 transition-all active:scale-95 shadow-md rounded-full">Book</a>
 					<!-- Hamburger mobile -->
-					<button class="md:hidden flex flex-col gap-1.5 p-1.5 border border-[#2f2f2e]/20" onclick={() => mobileMenuOpen = !mobileMenuOpen} aria-label="Toggle menu">
-						<span class="block w-5 h-0.5 bg-[#2f2f2e] transition-all duration-300" class:rotate-45={mobileMenuOpen} class:translate-y-2={mobileMenuOpen}></span>
-						<span class="block w-5 h-0.5 bg-[#2f2f2e] transition-all duration-300" class:opacity-0={mobileMenuOpen}></span>
-						<span class="block w-5 h-0.5 bg-[#2f2f2e] transition-all duration-300" class:-rotate-45={mobileMenuOpen} class:-translate-y-2={mobileMenuOpen}></span>
+					<button class="md:hidden flex flex-col gap-1.5 p-1.5" onclick={() => mobileMenuOpen = !mobileMenuOpen} aria-label="Toggle menu">
+						<span class="block w-5 h-0.5 bg-white transition-all duration-300" class:rotate-45={mobileMenuOpen} class:translate-y-2={mobileMenuOpen}></span>
+						<span class="block w-5 h-0.5 bg-white transition-all duration-300" class:opacity-0={mobileMenuOpen}></span>
+						<span class="block w-5 h-0.5 bg-white transition-all duration-300" class:-rotate-45={mobileMenuOpen} class:-translate-y-2={mobileMenuOpen}></span>
 					</button>
 				</div>
 			</div>

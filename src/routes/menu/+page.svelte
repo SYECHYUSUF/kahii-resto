@@ -185,21 +185,31 @@
 		</span>
 	</div>
 	<!-- Main Nav -->
-	<nav class="glass-morphism h-14 sm:h-20 px-4 sm:px-8 flex justify-between items-center border-b border-black/5 shadow-sm">
+	<nav class="h-14 sm:h-20 px-4 sm:px-8 flex justify-between items-center shadow-md w-full" style="background:#ba0013;backdrop-filter:blur(24px) saturate(200%);-webkit-backdrop-filter:blur(24px) saturate(200%);">
 		<!-- Left -->
-		<div class="flex gap-4 sm:gap-8">
-			<a href="/menu" class="text-[#ba0013] font-bold border-b-2 border-[#ba0013] pb-0.5 font-['Epilogue'] tracking-tight text-sm sm:text-base">Menu</a>
-			<a href="#" class="hidden sm:block text-[#2f2f2e] font-medium font-['Epilogue'] tracking-tight hover:text-[#ba0013] transition-colors text-sm">Gifts</a>
+		<div class="flex gap-4 sm:gap-8 items-center font-['Epilogue'] tracking-tight text-sm uppercase font-bold">
+			<a href="/menu" class="bg-white text-[#ba0013] px-3 sm:px-4 py-1 sm:py-1.5 rounded-full shadow-sm text-sm sm:text-base">Menu</a>
+			<a href="#" class="hidden sm:block text-white hover:text-white/80 transition-colors">Gifts</a>
 		</div>
-		<!-- Logo -->
-		<a href="/" class="font-['Epilogue'] font-black text-xl sm:text-3xl text-[#2f2f2e] italic tracking-tighter">KAHII</a>
+		<!-- Central Logo (desktop) -->
+		<div class="hidden md:flex absolute left-1/2 -translate-x-1/2 top-0 flex-col items-center">
+			<a href="/" class="flex items-center gap-2 bg-white px-6 pt-3 pb-10 bemet-logo-shape shadow-[0_15px_30px_rgba(0,0,0,0.15)] border-x border-b border-black/5 hover:bg-gray-50 transition-colors cursor-pointer" style="filter: drop-shadow(0 4px 6px rgba(0,0,0,0.2));">
+				<img src="/kahi-logo.png" alt="Kahii icon" class="h-10 w-auto" />
+				<img src="/kahi-logo-2.png" alt="Kahii" class="h-8 w-auto" />
+			</a>
+		</div>
+		<!-- Mobile Logo -->
+		<div class="flex md:hidden items-center gap-2">
+			<a href="/"><img src="/kahi-logo.png" alt="Kahii" class="h-7 w-auto" style="filter:brightness(0) invert(1)" /></a>
+			<a href="/"><img src="/kahi-logo-2.png" alt="Kahii" class="h-5 w-auto" style="filter:brightness(0) invert(1)" /></a>
+		</div>
 		<!-- Right -->
-		<div class="flex gap-3 sm:gap-8 items-center">
-			<a href="#happenings" class="hidden sm:block text-[#2f2f2e] font-medium font-['Epilogue'] tracking-tight hover:text-[#ba0013] transition-colors text-sm">Events</a>
-			<a href="/#about" class="hidden sm:block text-[#2f2f2e] font-medium font-['Epilogue'] tracking-tight hover:text-[#ba0013] transition-colors text-sm">Locations</a>
-			<div class="flex gap-2 sm:gap-4">
-				<span class="material-symbols-outlined cursor-pointer hover:text-[#ba0013] transition-transform active:scale-90 text-[#2f2f2e] text-xl sm:text-2xl">shopping_bag</span>
-				<span class="material-symbols-outlined cursor-pointer hover:text-[#ba0013] transition-transform active:scale-90 text-[#2f2f2e] text-xl sm:text-2xl">person</span>
+		<div class="flex gap-3 sm:gap-8 items-center font-['Epilogue'] tracking-tight text-sm uppercase font-bold">
+			<a href="#happenings" class="hidden sm:block text-white hover:text-white/80 transition-colors">Events</a>
+			<a href="/#about" class="hidden sm:block text-white hover:text-white/80 transition-colors">Locations</a>
+			<div class="flex gap-2 sm:gap-4 items-center">
+				<span class="material-symbols-outlined cursor-pointer hover:text-white/80 transition-colors active:scale-90 text-white text-xl sm:text-2xl select-none">shopping_bag</span>
+				<span class="material-symbols-outlined cursor-pointer hover:text-white/80 transition-colors active:scale-90 text-white text-xl sm:text-2xl select-none">person</span>
 			</div>
 		</div>
 	</nav>
