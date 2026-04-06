@@ -136,12 +136,12 @@
 	{#if !headerScrolled}
 		<!-- ── State: TOP — split layout for mobile vs desktop ── -->
 		<!-- DESKTOP: logo center + nav below -->
-		<div class="hidden sm:flex flex-col items-center pt-4 pb-3">
+		<div class="hidden sm:flex gap-y-4 flex-col items-center pt-4 pb-3">
 			<div class="flex items-center gap-2 bg-white px-4 py-2 sm:px-6 sm:py-3 bemet-logo-shape shadow-lg">
 				<img src="/kahi-logo.png" alt="Kahii icon" class="h-8 sm:h-10 w-auto" />
 				<img src="/kahi-logo-2.png" alt="Kahii" class="h-6 sm:h-8 w-auto" />
 			</div>
-			<div class="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 mt-3 font-['Epilogue'] tracking-tight text-xs sm:text-sm uppercase font-bold text-white px-4">
+			<div class="flex flex-wrap items-center justify-center gap-x-10 gap-y-2 mt-3 font-['Epilogue'] tracking-tight text-xs sm:text-sm uppercase font-bold text-white px-4">
 				<a href="#menu" class="hover:text-[#ba0013] transition-colors">Menu</a>
 				<a href="#reservation" class="hover:text-[#ba0013] transition-colors">Reservations</a>
 				<a href="#about" class="hover:text-[#ba0013] transition-colors">Our Story</a>
