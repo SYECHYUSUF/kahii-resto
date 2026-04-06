@@ -18,7 +18,7 @@ class FavoritesStore {
 		if (!this.items.find((p) => p.id === product.id)) {
 			this.items.push(product);
 			this.save();
-			
+
 			// Trigger shaking animation after fly animation (approx 1s)
 			setTimeout(() => {
 				this.isShaking = true;

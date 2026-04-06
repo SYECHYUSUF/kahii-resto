@@ -17,9 +17,7 @@
 	let selectedCategory = $state<'All' | 'Coffee' | 'Dessert' | 'Bites'>('All');
 
 	const filteredProducts = $derived(
-		selectedCategory === 'All'
-			? products
-			: products.filter((p) => p.category === selectedCategory)
+		selectedCategory === 'All' ? products : products.filter((p) => p.category === selectedCategory)
 	);
 </script>
 
@@ -29,14 +27,21 @@
 
 <div class="min-h-screen bg-brand-cream pb-24">
 	<!-- Header -->
-	<header class="bg-brand-dark py-16 text-center text-white relative">
-		<div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=1920')] bg-cover bg-center opacity-20 object-cover mix-blend-overlay"></div>
-		<div class="container mx-auto px-6 relative z-10">
-			<a href="/#menu" class="mb-8 inline-block text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors">
+	<header class="relative bg-brand-dark py-16 text-center text-white">
+		<div
+			class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=1920')] bg-cover bg-center object-cover opacity-20 mix-blend-overlay"
+		></div>
+		<div class="relative z-10 container mx-auto px-6">
+			<a
+				href="/#menu"
+				class="mb-8 inline-block text-sm font-bold tracking-widest uppercase transition-colors hover:text-primary"
+			>
 				← Kembali ke Beranda
 			</a>
-			<h1 class="text-6xl text-white tracking-widest" style="font-family: var(--font-display)">Daftar Menu</h1>
-			<p class="mt-4 text-brand-cream/80 text-lg">Pilihan terbaik untuk menemani momen Anda.</p>
+			<h1 class="text-6xl tracking-widest text-white" style="font-family: var(--font-display)">
+				Daftar Menu
+			</h1>
+			<p class="mt-4 text-lg text-brand-cream/80">Pilihan terbaik untuk menemani momen Anda.</p>
 		</div>
 	</header>
 
@@ -77,26 +82,39 @@
 							class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
 							loading="lazy"
 						/>
-						<div class="absolute right-6 top-6 rounded-full bg-brand-gold/90 px-4 py-1 text-xs font-bold text-brand-dark shadow-md backdrop-blur-md">
+						<div
+							class="absolute top-6 right-6 rounded-full bg-brand-gold/90 px-4 py-1 text-xs font-bold text-brand-dark shadow-md backdrop-blur-md"
+						>
 							{product.category}
 						</div>
 					</div>
 					<div class="flex flex-1 flex-col p-8">
 						<h3
-							class="mb-3 text-3xl text-brand-dark group-hover:text-primary transition-colors tracking-wide"
-							style="font-family: var(--font-display); view-transition-name: product-name-{getTransitionId(product.id)}"
+							class="mb-3 text-3xl tracking-wide text-brand-dark transition-colors group-hover:text-primary"
+							style="font-family: var(--font-display); view-transition-name: product-name-{getTransitionId(
+								product.id
+							)}"
 						>
 							{product.name}
 						</h3>
-						<p class="mb-6 flex-1 text-brand-dark/60 leading-relaxed">
+						<p class="mb-6 flex-1 leading-relaxed text-brand-dark/60">
 							{product.description}
 						</p>
 						<div class="flex items-center justify-between">
 							<span class="text-2xl font-bold text-brand-gold">
 								Rp {product.price.toLocaleString('id-ID')}
 							</span>
-							<div class="rounded-full bg-primary/10 p-3 text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300">
-								<svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+							<div
+								class="rounded-full bg-primary/10 p-3 text-primary transition-all duration-300 group-hover:bg-primary group-hover:text-white"
+							>
+								<svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+									><path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M12 4v16m8-8H4"
+									/></svg
+								>
 							</div>
 						</div>
 					</div>

@@ -63,10 +63,20 @@
 
 <div class="min-h-screen bg-brand-cream pb-24">
 	<!-- Top Bar -->
-	<nav class="bg-brand-dark/90 py-6 backdrop-blur-md sticky top-0 z-50 text-white shadow-md">
+	<nav class="sticky top-0 z-50 bg-brand-dark/90 py-6 text-white shadow-md backdrop-blur-md">
 		<div class="container mx-auto px-6">
-			<a href="/products" class="inline-flex items-center gap-2 font-bold text-white hover:text-brand-gold transition-colors tracking-wider text-sm uppercase">
-				<svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
+			<a
+				href="/products"
+				class="inline-flex items-center gap-2 text-sm font-bold tracking-wider text-white uppercase transition-colors hover:text-brand-gold"
+			>
+				<svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+					><path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						stroke-width="2"
+						d="M10 19l-7-7m0 0l7-7m-7 7h18"
+					/></svg
+				>
 				Kembali ke Menu
 			</a>
 		</div>
@@ -85,7 +95,9 @@
 					alt={product.name}
 					class="h-full w-full object-cover"
 				/>
-				<div class="absolute left-8 top-8 rounded-full bg-brand-gold px-6 py-2 text-sm font-bold uppercase tracking-widest text-brand-dark shadow-lg">
+				<div
+					class="absolute top-8 left-8 rounded-full bg-brand-gold px-6 py-2 text-sm font-bold tracking-widest text-brand-dark uppercase shadow-lg"
+				>
 					{product.category}
 				</div>
 			</div>
@@ -93,8 +105,10 @@
 			<!-- Product Details -->
 			<div class="flex flex-col justify-center">
 				<h1
-					class="mb-6 text-6xl text-brand-dark lg:text-8xl tracking-widest"
-					style="font-family: var(--font-display); view-transition-name: product-name-{getTransitionId(product.id)}"
+					class="mb-6 text-6xl tracking-widest text-brand-dark lg:text-8xl"
+					style="font-family: var(--font-display); view-transition-name: product-name-{getTransitionId(
+						product.id
+					)}"
 				>
 					{product.name}
 				</h1>
@@ -115,7 +129,7 @@
 					</a>
 					<button
 						onclick={addToFavorites}
-						class="flex-1 rounded-3xl bg-brand-dark px-10 py-6 text-xl font-bold text-white transition-all hover:bg-brand-gold hover:text-brand-dark active:scale-95 shadow-xl"
+						class="flex-1 rounded-3xl bg-brand-dark px-10 py-6 text-xl font-bold text-white shadow-xl transition-all hover:bg-brand-gold hover:text-brand-dark active:scale-95"
 					>
 						Favoritkan
 					</button>
@@ -123,15 +137,21 @@
 
 				<div class="mt-16 grid grid-cols-3 gap-8 border-t border-brand-dark/10 pt-16 text-center">
 					<div>
-						<h4 class="mb-2 font-bold uppercase tracking-widest text-brand-dark/40 text-xs">Aroma</h4>
+						<h4 class="mb-2 text-xs font-bold tracking-widest text-brand-dark/40 uppercase">
+							Aroma
+						</h4>
 						<p class="font-bold">Exceptional</p>
 					</div>
 					<div>
-						<h4 class="mb-2 font-bold uppercase tracking-widest text-brand-dark/40 text-xs">Kualitas</h4>
+						<h4 class="mb-2 text-xs font-bold tracking-widest text-brand-dark/40 uppercase">
+							Kualitas
+						</h4>
 						<p class="font-bold">Premium</p>
 					</div>
 					<div>
-						<h4 class="mb-2 font-bold uppercase tracking-widest text-brand-dark/40 text-xs">Rasa</h4>
+						<h4 class="mb-2 text-xs font-bold tracking-widest text-brand-dark/40 uppercase">
+							Rasa
+						</h4>
 						<p class="font-bold">Original</p>
 					</div>
 				</div>

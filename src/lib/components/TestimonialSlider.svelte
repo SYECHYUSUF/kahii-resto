@@ -54,7 +54,7 @@
 <section class="section-padding" style="background:#f6edde;" id="testimonials">
 	<div class="container mx-auto px-6" style="max-width:1300px">
 		<!-- Header -->
-		<div class="scroll-reveal text-center mb-12">
+		<div class="scroll-reveal mb-12 text-center">
 			<div class="sub-title-badge justify-center">
 				<span></span>
 				TESTIMONIALS
@@ -72,17 +72,35 @@
 							<div class="testi-card">
 								<div class="testi-stars">
 									{#each Array(5) as _}
-										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="16"
+											height="16"
+											fill="currentColor"
+											viewBox="0 0 24 24"
+											><path
+												d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+											/></svg
+										>
 									{/each}
 								</div>
-								<p style="color:#555; line-height:1.8; margin-bottom:20px; font-size:0.95rem">{t.text}</p>
-								<div class="flex items-center gap-4" style="border-top:1px solid #f0e8da; padding-top:16px">
-									<img src={t.avatar} alt={t.name} class="testi-avatar w-14 h-14" />
+								<p style="color:#555; line-height:1.8; margin-bottom:20px; font-size:0.95rem">
+									{t.text}
+								</p>
+								<div
+									class="flex items-center gap-4"
+									style="border-top:1px solid #f0e8da; padding-top:16px"
+								>
+									<img src={t.avatar} alt={t.name} class="testi-avatar h-14 w-14" />
 									<div>
-										<h5 style="font-family: var(--font-serif); font-weight:700; color:#1a1010; font-size:1rem">{t.name}</h5>
+										<h5
+											style="font-family: var(--font-serif); font-weight:700; color:#1a1010; font-size:1rem"
+										>
+											{t.name}
+										</h5>
 										<p style="color:#a21b2b; font-size:0.8rem; font-weight:600">{t.role}</p>
 									</div>
-									<div class="ml-auto testi-quote-icon">"</div>
+									<div class="testi-quote-icon ml-auto">"</div>
 								</div>
 							</div>
 						</div>
@@ -91,12 +109,28 @@
 			</div>
 
 			<!-- Buttons -->
-			<div class="flex justify-center gap-4 mt-10">
+			<div class="mt-10 flex justify-center gap-4">
 				<button class="swiper-btn testi-prev" aria-label="Previous">
-					<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="20"
+						height="20"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7" /></svg
+					>
 				</button>
 				<button class="swiper-btn testi-next" aria-label="Next">
-					<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="20"
+						height="20"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg
+					>
 				</button>
 			</div>
 		</div>
@@ -104,6 +138,14 @@
 </section>
 
 <style>
-	.swiper-btn { border-color: #a21b2b; color: #a21b2b; background: transparent; }
-	.swiper-btn:hover { background: #a21b2b; color: #fff; border-color: #a21b2b; }
+	.swiper-btn {
+		border-color: #a21b2b;
+		color: #a21b2b;
+		background: transparent;
+	}
+	.swiper-btn:hover {
+		background: #a21b2b;
+		color: #fff;
+		border-color: #a21b2b;
+	}
 </style>
